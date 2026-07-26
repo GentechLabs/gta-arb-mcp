@@ -1,0 +1,2 @@
+# No dependencies beyond Python 3.11+ standard library
+# urllib.request, json, sys, time, typing
