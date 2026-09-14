@@ -104,7 +104,14 @@ def handle_request(msg: dict) -> dict | None:
     method = msg.get("method")
     params = msg.get("params", {})
     
-    if method == "tools/list":
+    if method == "initialize":
+        return {"jsonrpc": "2.0", "id": req_id, "result": {
+            "protocolVersion": params.get("protocolVersion", "2024-11-05"),
+            "capabilities": {"tools": {}},
+            "serverInfo": {"name": "gta-arb-mcp", "version": "1.0.0"}
+        }}
+
+    elif method == "tools/list":
         return {"jsonrpc": "2.0", "id": req_id, "result": {"tools": TOOLS}}
     
     elif method == "tools/call":
