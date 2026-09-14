@@ -1,0 +1,8 @@
+{
+  "name": "gta-arb-mcp",
+  "description": "Cross-venue arbitrage scanner for 7 tracked assets between Hyperliquid perps and Coinbase spot; returns spread in basis points, direction, and the trade to execute.",
+  "author": { "name": "GentechLabs", "url": "https://github.com/GentechLabs" },
+  "repository": "GentechLabs/gta-arb-mcp",
+  "categories": ["Trading", "Data", "Finance"],
+  "related": []
+}
